@@ -158,7 +158,7 @@ async def create_readme(category_names, categories):
     host_url = "https://github.com/Bhupesh-V/til/blob/master/"
     print("Generating README.md")
 
-    with open("README.md", "w") as file:
+    with open("README.md", "w", encoding='utf-8') as file:
         file.write(HEADER)
         file.write("""\n\n## Categories\n""")
         # print the list of categories with links
